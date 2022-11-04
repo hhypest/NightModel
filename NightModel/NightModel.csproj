@@ -15,6 +15,7 @@
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <PackageIcon>PackIcon.jpg</PackageIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
