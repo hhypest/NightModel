@@ -18,10 +18,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Icon\PackIcon.jpg">
+    <None Remove="Icon\PackIcon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icon\PackIcon.jpg">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
+    </Resource>
   </ItemGroup>
 
 </Project>
