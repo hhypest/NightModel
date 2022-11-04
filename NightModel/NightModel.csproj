@@ -4,6 +4,23 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <Title>NightModel</Title>
+    <Version>0.1.6</Version>
+    <Authors>hhypest</Authors>
+    <Company>hhNET</Company>
+    <Description>Простейший фреймоврк для реализации MVVM-паттерна.</Description>
+    <Copyright>hhypest</Copyright>
+    <RepositoryUrl>https://github.com/hhypest/NightModel</RepositoryUrl>
+    <PackageTags>MVVM; WPF; Base</PackageTags>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageIcon>PackIcon.jpg</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Icon\PackIcon.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
