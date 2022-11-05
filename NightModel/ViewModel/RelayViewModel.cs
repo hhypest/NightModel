@@ -35,8 +35,9 @@ public abstract class RelayViewModel : BaseViewModel
         if (comparer.Equals(field, value))
             return false;
 
-        OnPropertyChanging(propertyName);
         action(value);
+        OnPropertyChanging(propertyName);
+        field = value;
         OnPropertyChanged(propertyName);
         return true;
     }
@@ -88,12 +89,14 @@ public abstract class RelayViewModel : BaseViewModel
         if (errorCheck(value))
         {
             action(value);
+            field = value;
             AddErrorToList(propertyName, errorMessage);
             return true;
         }
 
-        OnPropertyChanging(propertyName);
         action(value);
+        OnPropertyChanging(propertyName);
+        field = value;
         OnPropertyChanged(propertyName);
         return true;
     }
