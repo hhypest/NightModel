@@ -30,6 +30,7 @@ public class RelayAsyncCommand : AsyncCommand
         try
         {
             _isExecute = true;
+            OnCanExecuteChanged();
             await _execute();
         }
         finally
