@@ -19,6 +19,7 @@ public class NavigationContainer : INavigationContainer
         if (Equals(field, value))
             return false;
 
+        field?.Dispose();
         field = value;
         OnViewModelChanged();
         return true;
