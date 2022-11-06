@@ -11,7 +11,13 @@ public abstract class Command : ICommand
         remove => CommandManager.RequerySuggested -= value;
     }
 
-    public abstract bool CanExecute(object? parameter);
+    public abstract bool CanExecute();
 
-    public abstract void Execute(object? parameter);
+    public abstract void Execute();
+
+    bool ICommand.CanExecute(object? parameter)
+        => CanExecute();
+
+    void ICommand.Execute(object? parameter)
+        => Execute();
 }
