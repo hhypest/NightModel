@@ -1,6 +1,7 @@
 ﻿using System.IO;
 
 namespace NightModel.Services.DialogMessageService;
+
 public interface IDialogMessage
 {
     public FileInfo? OpenFileDialog(string title, string filter = "Все файлы|*.*");
