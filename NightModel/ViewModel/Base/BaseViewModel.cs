@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace NightModel.ViewModel.Base;
 
-public abstract class BaseViewModel : INotifyPropertyChanged, INotifyPropertyChanging, INotifyDataErrorInfo, IDisposable
+public abstract class BaseViewModel : INotifyPropertyChanged, INotifyPropertyChanging, INotifyDataErrorInfo
 {
     public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -53,10 +53,6 @@ public abstract class BaseViewModel : INotifyPropertyChanged, INotifyPropertyCha
     {
         if (ErrorList.Remove(propertyName))
             OnErrorsChanged(propertyName);
-    }
-
-    public virtual void Dispose()
-    {
     }
 
     protected abstract bool Set<T>(ref T field, T value, [CallerMemberName] string? propertyName = null);
