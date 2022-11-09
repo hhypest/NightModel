@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <Title>NightModel</Title>
-    <Version>0.1.7</Version>
+    <Version>0.1.8</Version>
     <Authors>hhypest</Authors>
     <Company>hhNET</Company>
     <Description>Простейший фреймоврк для реализации MVVM-паттерна.</Description>
@@ -17,6 +17,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>update to .NET 7</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
