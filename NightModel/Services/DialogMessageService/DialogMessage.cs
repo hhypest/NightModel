@@ -20,7 +20,6 @@ public class DialogMessage : IDialogMessage
             Title = title,
             Filter = filter,
             RestoreDirectory = true,
-            AddExtension = true,
             CheckFileExists = true,
             CheckPathExists = true,
             Multiselect = false
@@ -40,7 +39,6 @@ public class DialogMessage : IDialogMessage
             Filter = filter,
             FileName = name ?? "Новый файл",
             RestoreDirectory = true,
-            AddExtension = true
         };
 
         if (dialog.ShowDialog(CurrentWindow) == false)
