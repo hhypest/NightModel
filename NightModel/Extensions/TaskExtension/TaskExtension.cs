@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace NightModel.Extansions.TaskExtansion;
+namespace NightModel.Extensions.TaskExtension;
 
-internal static class TaskExtansion
+internal static class TaskExtension
 {
     internal static async void RunVoid(this Task task)
     {

@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <Title>NightModel</Title>
-    <Version>0.1.9</Version>
+    <Version>0.2.0</Version>
     <Authors>hhypest</Authors>
     <Company>hhNET</Company>
     <Description>Простейший фреймоврк для реализации MVVM-паттерна.</Description>
@@ -17,7 +17,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>fix</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
