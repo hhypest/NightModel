@@ -8,7 +8,7 @@
     <Version>0.2.0</Version>
     <Authors>hhypest</Authors>
     <Company>hhNET</Company>
-    <Description>Простейший фреймоврк для реализации MVVM-паттерна.</Description>
+    <Description>Простейший фреймворк для реализации MVVM-паттерна.</Description>
     <Copyright>hhypest</Copyright>
     <RepositoryUrl>https://github.com/hhypest/NightModel</RepositoryUrl>
     <PackageTags>MVVM; WPF; Base</PackageTags>
