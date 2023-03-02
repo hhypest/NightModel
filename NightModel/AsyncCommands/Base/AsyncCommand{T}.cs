@@ -24,5 +24,5 @@ public abstract class AsyncCommand<T> : ICommand
         => CanExecute((T?)parameter);
 
     void ICommand.Execute(object? parameter)
-        => Execute((T?)parameter).RunVoid();
+        => Task.Run(() => Execute((T?)parameter).RunVoid());
 }
