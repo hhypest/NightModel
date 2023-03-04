@@ -3,7 +3,7 @@ using System;
 
 namespace NightModel.Commands;
 
-public class RelayCommand : Command
+public sealed class RelayCommand : Command
 {
     private readonly Action _execute;
 

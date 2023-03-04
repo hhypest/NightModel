@@ -2,7 +2,7 @@
 
 namespace NightModel.Services.ErrorMessageService;
 
-public class ErrorMessage : IErrorMessage
+public sealed class ErrorMessage : IErrorMessage
 {
     private readonly IDictionary<string, string> _errors;
 

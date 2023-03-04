@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace NightModel.AsyncCommands;
 
-public class RelayAsyncCommand<T> : AsyncCommand<T>
+public sealed class RelayAsyncCommand<T> : AsyncCommand<T>
 {
     private readonly Func<T?, Task> _execute;
     private readonly Predicate<T?>? _canExecute;
