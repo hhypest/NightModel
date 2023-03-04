@@ -4,11 +4,11 @@ namespace NightModel.Services.FactoryViewModel;
 
 public interface IRelayFactory<T>
 {
-    Func<T>? CreateViewModel { get; set; }
+    public Func<T>? CreateViewModel { get; set; }
 
-    T? SelectedViewModel { get; }
+    public T? SelectedViewModel { get; }
 
-    event Action? ChangedViewModel;
+    public event Action? ChangedViewModel;
 
-    void Create();
+    public void Create();
 }

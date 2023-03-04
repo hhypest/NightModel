@@ -97,8 +97,4 @@ public abstract class RelayViewModel : BaseViewModel
         OnPropertyChanged(propertyName);
         return true;
     }
-
-    public virtual void UnsubscribeEvent()
-    {
-    }
 }
