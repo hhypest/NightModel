@@ -1,7 +1,7 @@
 # NightModel
 Простейший фреймворк для базовой реализации MVVM-паттерна.
 
-Далее базовый пример реализации модели представления:
+Далее представлен базовый пример реализации модели представления:
 
 ```csharp
 
@@ -18,6 +18,7 @@ public class UserViewModel : RelayViewModel
     private string _userFirstName;
     private string _userLastName;
     private int _userAge;
+    private Guid _userId;
 
     #endregion Поля для свойств
 
@@ -26,6 +27,7 @@ public class UserViewModel : RelayViewModel
     public string UserFirstName { get => _userFirstName; set => Set(ref _userFirstName, value, OnNameCheck, _errorMessage.GetError(nameof(UserFirstName)), nameof(UserFirstName)); }
     public string UserLastName { get => _userLastName; set => Set(ref _userLastName, value, OnNameCheck, _errorMessage.GetError(nameof(UserLastName)), nameof(UserLastName)); }
     public int UserAge { get => _userAge; set => Set(ref _userAge, value, OnAgeCheck, _errorMessage.GetError(nameof(UserAge)), nameof(UserAge)); }
+    public Guid UserId {get => _userId; set => Set(ref _userId, value); }
 
     #endregion Свойства модели
 
@@ -47,6 +49,7 @@ public class UserViewModel : RelayViewModel
         _userFirstName = "Иван";
         _userLastName = "Петров";
         _userAge = 20;
+        _userId = Guid.NewGuid();
 
         SaveUserCommand = new RelayAsyncCommand<string>(OnSaveUserExecute, (pathSave) => !HasErrors && !string.IsNullOrWhiteSpace(pathSave));
         LoadUserCommand = new RelayAsyncCommand(OnLoadUserExecute);
@@ -59,10 +62,10 @@ public class UserViewModel : RelayViewModel
     #region Предикаты валидации
 
     private static bool OnNameCheck(string name)
-        => string.IsNullOrWhiteSpace(name) || name.Length < 5;
+        => string.IsNullOrWhiteSpace(name) && name.Length < 5;
 
     private static bool OnAgeCheck(int age)
-        => age < 1 || age > 100;
+        => age < 1 && age > 100;
 
     #endregion Предикаты валидации
 
@@ -94,5 +97,3 @@ public class UserViewModel : RelayViewModel
 
     #endregion Обработчики команд
 }
-
-```
