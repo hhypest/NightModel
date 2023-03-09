@@ -49,8 +49,9 @@ public abstract class RelayViewModel : BaseViewModel
         ClearErrorList(propertyName);
         if (errorCheck(value))
         {
-            field = value;
             AddErrorToList(propertyName, errorMessage);
+            field = value;
+            OnPropertyChanged(propertyName);
             return true;
         }
 
@@ -68,8 +69,9 @@ public abstract class RelayViewModel : BaseViewModel
         ClearErrorList(propertyName);
         if (errorCheck(value))
         {
-            field = value;
             AddErrorToList(propertyName, errorMessage);
+            field = value;
+            OnPropertyChanged(propertyName);
             return true;
         }
 
@@ -87,8 +89,9 @@ public abstract class RelayViewModel : BaseViewModel
         ClearErrorList(propertyName);
         if (errorCheck(value))
         {
-            action(value);
             AddErrorToList(propertyName, errorMessage);
+            action(value);
+            OnPropertyChanged(propertyName);
             return true;
         }
 

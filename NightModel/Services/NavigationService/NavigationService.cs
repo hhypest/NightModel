@@ -2,7 +2,7 @@
 
 namespace NightModel.Services.NavigationService;
 
-public sealed class NavigationService<T> where T : class
+public sealed class NavigationService<T> : INavigationService<T> where T : class
 {
     public T SelectedViewModel { get; private set; } = null!;
 

@@ -58,7 +58,6 @@ public abstract class BaseViewModel : INotifyPropertyChanged, INotifyPropertyCha
         ErrorList[propertyName].Add(errorMessage);
         OnPropertyChanging(propertyName);
         OnErrorsChanged(propertyName);
-        OnPropertyChanged(propertyName);
     }
 
     protected virtual void ClearErrorList(string propertyName)
