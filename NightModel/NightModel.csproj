@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <Title>NightModel</Title>
-    <Version>0.2.2</Version>
+    <Version>0.3.0</Version>
     <Authors>hhypest</Authors>
     <Company>hhNET</Company>
     <Description>Простейший фреймворк для реализации MVVM-паттерна.</Description>
@@ -17,7 +17,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>The factory of view models has been redesigned.</PackageReleaseNotes>
+    <PackageReleaseNotes>Add navigation service;
+Extension documentation</PackageReleaseNotes>
     <PackageReadmeFile>NightModel.md</PackageReadmeFile>
   </PropertyGroup>
 

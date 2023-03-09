@@ -50,13 +50,19 @@ public class DialogMessage : IDialogMessage
     }
 
     public virtual void ShowInformationDialog(string title, string message)
-        => MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Information);
+        {
+        MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Information);
+    }
 
     public virtual void ShowWarningDialog(string title, string message)
-        => MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Warning);
+    {
+        MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Warning);
+    }
 
     public virtual void ShowErrorMessage(string title, string message)
-        => MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Error);
+    {
+        MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Error);
+    }
 
     public virtual bool ShowQuestionDialog(string title, string message)
     {
