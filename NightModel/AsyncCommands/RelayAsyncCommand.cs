@@ -36,8 +36,7 @@ public sealed class RelayAsyncCommand : AsyncCommand
         finally
         {
             _isExecute = false;
+            OnCanExecuteChanged();
         }
-
-        OnCanExecuteChanged();
     }
 }

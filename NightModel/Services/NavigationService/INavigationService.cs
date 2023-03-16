@@ -4,9 +4,13 @@ namespace NightModel.Services.NavigationService;
 
 public interface INavigationService<T> where T : class
 {
-    public T SelectedViewModel { get; }
+    public event EventHandler<EventArgs>? NavigationCompleted;
 
-    public event EventHandler<EventArgs> NavigationCompleted;
+    public T NavigatedViewModel { get; }
 
-    public void NavigateTo(Func<T> func);
+    public void AddFactory(Type type, Func<T> factory);
+
+    public void NavigateTo(Func<T> factory);
+
+    public void NavigateTo(Type type);
 }

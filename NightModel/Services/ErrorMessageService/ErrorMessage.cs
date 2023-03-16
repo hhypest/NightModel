@@ -7,7 +7,9 @@ public sealed class ErrorMessage : IErrorMessage
     private readonly IDictionary<string, string> _errors;
 
     public ErrorMessage(IDictionary<string, string> errors)
-        => _errors = errors;
+    {
+        _errors = errors;
+    }
 
     public string GetError(string propertyName)
     {
