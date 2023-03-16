@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace NightModel.ViewModel;
 
+/// <summary>Класс для реализации ViewModel с переопределёнными методами <see cref="Set{T}(ref T, T, string?)"/>.</summary>
 public abstract class RelayViewModel : BaseViewModel
 {
     protected override bool Set<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)

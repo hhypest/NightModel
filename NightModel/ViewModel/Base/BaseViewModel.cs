@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace NightModel.ViewModel.Base;
 
+/// <summary>Представляет базовый класс для реализации ViewModel.</summary>
 public abstract class BaseViewModel : INotifyPropertyChanged, INotifyPropertyChanging, INotifyDataErrorInfo
 {
     /// <summary>Возникает при изменении значения свойства.</summary>
