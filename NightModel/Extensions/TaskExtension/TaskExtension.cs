@@ -6,13 +6,13 @@ internal static class TaskExtension
 {
     internal static void RunVoid(this Task task)
     {
-        if(!task.IsCompleted || task.IsFaulted)
+        if (!task.IsCompleted || task.IsFaulted)
         {
             _ = ForgetAwaiter(task);
         }
     }
 
-    private async static Task ForgetAwaiter(Task task)
+    private static async Task ForgetAwaiter(Task task)
     {
         try
         {

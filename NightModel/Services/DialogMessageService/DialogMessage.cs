@@ -50,7 +50,7 @@ public class DialogMessage : IDialogMessage
     }
 
     public virtual void ShowInformationDialog(string title, string message)
-        {
+    {
         MessageBox.Show(CurrentWindow, message, title, MessageBoxButton.OK, MessageBoxImage.Information);
     }
 
