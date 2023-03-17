@@ -17,9 +17,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Add navigation service;
-Extension documentation</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <PackageReadmeFile>NightModel.md</PackageReadmeFile>
+    <AssemblyVersion>0.3.0.1</AssemblyVersion>
+    <FileVersion>0.3.0.1</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
